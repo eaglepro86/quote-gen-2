@@ -1,0 +1,14 @@
+:root {
+    --primary-red: #ED0600;
+    --secondary-red: #910400;
+    --third-red: #C00500;
+    --fourth-red: #FF0700;
+    --fifth-red: #FF2D28;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
