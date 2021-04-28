@@ -12,3 +12,137 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-red);
+    width: 100vw;
+}
+
+.main {
+    width: 100vw;
+    display: flex;
+    margin: 2rem;
+}
+
+/* Quote section */
+.main .quote-gen, .project-bio {
+    width: 50%;
+    padding: 2rem;
+}
+
+.quote-gen__card {
+    width: 100%;
+}
+
+.quote-gen__card h1{
+    color: white;
+    background-color: var(--third-red);
+    border-radius: 5px 5px 0 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 35px;
+}
+
+.quote-gen__card .quote-gen__quote {
+    min-height: 350px;
+    background-color: var(--fourth-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.quote-gen__card .quote-gen__author {
+    margin-top: 2rem;
+    color: var(--secondary-red);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.quote-gen__card .quote-gen__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--third-red);
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+    color: var(--fifth-red);
+    color: white;
+    font-size: 25px;
+}
+
+/* Project Bio */
+
+.project-bio__card {
+    width: 100%;
+
+}
+
+.project-bio__card .project-bio__header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--third-red);
+    color: white;
+    padding: 1rem;
+    font-size: 22px;
+}
+
+.project-bio__card .project-bio__body {
+    background-color: var(--fourth-red);
+    text-align: center;
+}
+
+.project-bio__card .project-bio__body img  {
+    height: 200px;
+    width: 100%;
+    color: white;
+    margin-top: -3px;
+    padding: 1rem;
+}
+
+.project-bio__card > .project-bio__body > p:first-of-type {
+    background-color: var(--fourth-red);
+    font-size: 22px;
+    color: white;
+    padding: 1rem;
+}
+
+.project-bio__card .project-bio__body p:last-of-type {
+    color: var(--secondary-red);
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+
+.project-bio__card .project-bio__footer {
+    background-color: var(--third-red);
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+/* Screen Layout */
+@media screen and (max-width: 900px) {
+    .body {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .main .quote-gen, .project-bio {
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+    }
+}
